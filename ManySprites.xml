@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <Sprites> 
+	<aSprite id="0"> 
+		<Speed>3000</Speed>
+		<xCoord>200</xCoord>
+		<yCoord>50</yCoord>
+	</aSprite>   
+	<aSprite id="1">
+		<Speed>3000</Speed>
+		<xCoord>200</xCoord>
+		<yCoord>100</yCoord>
+	</aSprite>
+	<aSprite id="2">
+		<Speed>3000</Speed>
+		<xCoord>200</xCoord>
+		<yCoord>150</yCoord>
+	</aSprite>
+	<aSprite id="3">
+		<Speed>3000</Speed>
+		<xCoord>200</xCoord>
+		<yCoord>200</yCoord>
+	</aSprite>
+	<aSprite id="4">
+		<Speed>3000</Speed>
+		<xCoord>200</xCoord>
+		<yCoord>250</yCoord>
+	</aSprite>	
+ </Sprites>

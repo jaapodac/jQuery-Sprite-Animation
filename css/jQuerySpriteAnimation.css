@@ -1,0 +1,169 @@
+/* jQuerySpriteAnimation.css
+*/    
+/*
+* { margin: 0; padding: 0; }
+    */
+    
+body {
+font-family: 'Trebuchet MS', Arial, Sans-Serif;
+}
+    
+html { 
+/* 2560x1600 image from http://wall.alphacoders.com/by_category.php?id=32
+*/
+			background: url(../images/Prince\ Of\ Persia\ The\ Sands\ Of\ Time\ Wallpaper.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		
+/* Slick way to simplify css requirement for jQuery UI, if you don't include the UI href in the html
+.ui-widget-overlay { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: #aaaaaa;
+    opacity: 0.3;
+}
+.ui-front {
+    z-index: 100;
+}
+
+*/
+		
+#page-wrap { 
+			width: 550px; 
+			background: rgba(255,255,255,0.75);
+			margin: 50px auto; 
+			padding: 20px; 
+			-moz-box-shadow: 0 0 20px black; 
+			-webkit-box-shadow: 0 0 20px black; 
+			box-shadow: 0 0 20px black; 
+}
+img {
+/*
+The idea here is that any image we load in the HTML won't be displayed until we want it
+using the JavaScript.
+
+    display:none;
+    */
+}
+div.score {
+
+    position: fixed;
+    top: 30px;
+    right: 5px;
+    color: white;
+    font-size: 2em;
+}
+
+div.ufo {
+/* Sprite Sheet for animation. */
+	position: absolute; /*position on the page */
+	width:  40px;
+	height: 40px;
+	z-index: 2000;
+    cursor: move;
+	background: transparent url(../images/SpaceSprite.png) 0 0 no-repeat; /* position within the image */
+}
+
+div.character {
+/* Sprite Sheet for animation. */
+	position: absolute; /*position on the page */
+	top: 200px; /* Initial X,Y coordinates of image on the page */
+    left: 800px;
+	width:  40px;
+	height: 40px;
+	z-index: 2000;
+    cursor: move;
+	background: transparent url(../images/CharacterSprite.png) 0 0 no-repeat; /* position within the image */
+	/* Remember the first value of background-position, is horizontal (x-axis) and the second one is vertical (y-axis).*/
+}
+
+div.slotMachine {
+/* Sprite Sheet for animation. */
+	position: absolute; /*position on the page */
+	top: 300px; /* Initial X,Y coordinates of image on the page*/
+    left: 950px;
+	width:  86px;
+	height: 66px;
+	background: transparent url(../images/slotMachineReelNormal.png) -0px -0px no-repeat; /* position within the image */
+}
+
+.anyship { /* Generic properties to be added (via JS) to .ship classes. */
+    position: absolute; /*position on the page */
+	width:  40px;
+	height: 40px;
+	z-index: 2000;
+	background: transparent url(../images/SpaceSprite.png) 0 0 no-repeat;
+	}
+	
+div.report {
+	position: absolute; /*position on the page */
+	top: 300px; /* Initial X,Y coordinates of image on the page*/
+    left: 400px;
+}
+
+#thingsToSave {
+    position:absolute;
+	top:  450px;
+	left: 850px;
+	/*background-color: 	#666666;  */
+}
+
+label{
+  width: 100px;
+  text-align:left;
+  
+}
+input{
+  width: 30px;
+  padding-left: 10px;
+}
+
+
+small {
+    color: red;
+    font-size : 8pt;
+}
+
+#copyright {
+	position:absolute; bottom:0;
+}
+
+#theButtons { 
+/*Make it look like a button panel */
+	float: right;
+	text-align:center;
+	color:purple;
+	font-size : 12pt;
+	font-weight:bold;
+	background-color: 	#666666;
+	font-family: Arial, Helvetica, sans-serif;
+	
+	padding:0 0 3px 0;
+	border-radius:5px;
+	border-width:2px;
+	border-style:solid;
+	border-color:#919191;
+}
+
+
+
+div.someGraphic{
+    content: url('../images/ArcLamp.jpg');
+	width: 50px; /*Scale the image but keep proportions. */
+	height: auto; 
+
+    border: 2px solid #92b901;
+    position: absolute;
+    top: 300px; /* X-Y positioning */
+    left: 900px;
+    
+}
+
+H1, H2, H3, H4 { text-align: center }
+

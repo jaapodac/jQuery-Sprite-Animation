@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Modified by J. Apodaca for jQuerySpriteAnimation project August 12, 2014.
+     I have very little idea what I am doing. -->
+
+
+<widget xmlns     = "jQuerySpriteAnimation.html"
+        id        = "com.jQuerySpriteAnimation.start"
+        version   = "1.0.0">
+
+    <name>jQuery Sprite Animation 0.11a</name>
+
+    <description>
+        jQuery Sprite Animation
+        Created with no user in mind.
+        No warranty offered or implied.
+    </description>
+
+    <author >
+        J. Apodaca
+    </author>
+
+    <!--
+        Comment
+    -->
+    <preference name="permissions"                value="none"/>
+
+    <!-- Customize your app and platform with the preference element. -->
+    <preference name="NumberOfShips"              value="10" />          <!-- How many ships are on the screen at once. -->
+    <preference name="ShipColor"                  value="green" />        <!-- Color of enemy ships -->
+
+  
+
+</widget>
