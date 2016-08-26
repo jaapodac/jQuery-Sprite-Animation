@@ -1,2 +1,2 @@
 # jQuery-Sprite-Animation
-Attempt at combining elements like background, sound, and animation.
+Attempt at combining elements like **User moveable** elements, background, sound, and animation.
