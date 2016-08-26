@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <title>jQuery Sprite Animation Web App</title>
+   <!-- Author: J. Apodaca    -->
+   <!-- Date:   August 12, 2014 -->
+   <!-- File:   jQuerySpriteAnimation.html -->
+   <!-- Exciting: Uses localStorage -->
+   
+   <!-- Style specs are most often in the head -->
+   <!-- Add a little Style (external file) -->
+   <link rel="stylesheet" href="css/jQuerySpriteAnimation.css" type="text/css">
+   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+
+</head>
+<body>
+
+<h1>jQuery Sprite Animation </h1>
+
+<!-- *********************** Some Notes ************************************** -->
+<div class="score">200000
+</div>
+      
+<div id="theButtons" >
+  <button id="WatchTheFilm"> WTF </button>
+  <br>
+  <button id="saveSettings"> Save </button>
+  <br>
+  <button id="help"> Help </button>
+  <button id="mAnotherSelection"> Another Selection </button>
+	  <div id="FauxPlayer">  
+	 
+	  <button id="mPTrack"><img src="image/AppleIcon.jpg"  height="40" width="40"> Prev Track </button>
+	  <button id="mPlay"><img src="image/AppleIcon.jpg"  height="40" width="40"> Play </button>	
+	  <button id="mPause"><img src="image/AppleIcon.jpg"  height="40" width="40"> Pause </button>
+	  <button id="mStop"><img src="image/AppleIcon.jpg"  height="40" width="40"> Stop </button>
+	  <button id="mNTrack"><img src="image/AppleIcon.jpg"  height="40" width="40"> Next Track </button>
+	  </div>
+	  <div class="someGraphic"> <!-- images will be controlled in the .css and .js files -->
+	  </div>
+  
+  <div id="track_Number"> </div>
+  </div>
+  
+  <div class="ufo">
+  <!-- images will be controlled in the .css and .js files -->
+  </div>
+  
+  <div class="character">
+  <!-- images will be controlled in the .css and .js files -->
+  </div>
+  
+   <div class="slotMachine">
+  <!-- images will be controlled in the .css and .js files -->
+  </div> 
+  
+  <div id='UFOS'>
+
+  </div>
+  
+  <div class="report">
+  <textarea id="details" rows="4" cols="30">
+Loading...
+</textarea>
+  </div>
+  
+  <div id="thingsToSave">
+  <label>Sprite Speed:</label><input type="text" id="SpriteSpeed" value="10"><br>
+  <label>Sprite X-Coord:</label><input type="text" id="SpriteXCoord" value="400"><br>
+  <label>Sprite Y-Coord:</label><input type="text" id="SpriteYCoord" value="800"><br>
+  <small>These values come from the last time this page was opened.</small>
+  </div>
+  
+  <div id="copyright">
+  <small>Powered by jQuery. jQuery Sprite Animation App by J. Apodaca, © August 2014</small>
+  </div>
+<!-- ********************************************************************************* -->
+
+<!-- JavaScripts are most often in the body -->
+<!-- Outside JavaScript, In support of browsers IE 9 +, Here we evolk the JQuery gods:
+    -->
+
+<!-- Make damn sure jQuery is ready.  If not, load local copy.
+load jQuery from Google's CDN -->
+<script> window.jQuery || document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" charset="utf-8" >\x3C/script>')</script> 
+<!-- fallback to Microsoft's Ajax CDN -->
+<script> window.jQuery || document.write('<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.js" charset="utf-8" >\x3C/script>')</script> 
+<!-- fallback to local file -->
+<script> window.jQuery || document.write('<script src="js/jquery-2.1.1.js" charset="utf-8" >\x3C/script>')</script> 
+
+<!-- jQuery UI Library -->
+<script src="js/jquery-ui-1.11.0/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Spritely - Animation jQuery Library -->
+<script src="js/spritely-0.6.8/src/jquery.spritely.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Author's Code -->
+<script type="text/javascript" src="js/jQuerySpriteAnimation.js" type="text/javascript" charset="utf-8"> </script>
+</body>
+</html>
